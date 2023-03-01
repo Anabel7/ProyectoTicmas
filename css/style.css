@@ -144,6 +144,10 @@ nav a:hover {
   color: #48435c;
 }
 
+#contacto li {
+  list-style-type: none;
+}
+
 footer {
   background-color: #48435c;
   color: #cfcee0;
