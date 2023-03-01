@@ -14,23 +14,39 @@ body {
   background-color: white;
   color: black;
 }
-.btn-top {
-  position: fixed;
-  bottom: -50px;
-  right: 20px;
-  font-size: 16px;
-  padding: 15px 20px;
-  background-color: rgb(252, 242, 196, 0.5);
-  color: #48435c;
-  border-radius: 50px;
-  border: none;
-  cursor: pointer;
-  z-index: 9999;
-  transition: all 0.3s ease-in-out;
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .presentation {
+    flex-direction: column;
+  }
+  .presentation > img {
+    width: auto;
+    align-items: center;
+  }
+  .row {
+    flex-direction: column;
+  }
 }
 
-.btn-top.show {
-  bottom: 20px;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+  }
+  .presentation {
+    flex-direction: row;
+  }
+  .row {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
 h1 h2 {
@@ -103,18 +119,15 @@ nav a:hover {
   color: #9792e3;
 }
 
-.active {
-  color: #fcf2c4;
-  background-color: #ff8360;
-}
-
 #sobremi {
   background-color: #fcf2c4;
   color: #48435c;
+  padding: 10%;
 }
 
 #educacion {
   color: #48435c;
+  padding: 5%;
 }
 
 #experiencia {
@@ -140,25 +153,21 @@ footer a:hover {
   color: white;
 }
 
-/*
-.logo {
-  flex-basis: 400px;
-  text-align: center;
-}
-*/
-/* ayer
-.navbar {
-  padding: 2%;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar__tabs {
-  display: flex;
-  justify-content: space-between;
+.btn-top {
+  position: fixed;
+  bottom: -50px;
+  right: 20px;
+  font-size: 16px;
+  padding: 15px 20px;
+  background-color: rgb(252, 242, 196, 0.5);
+  color: #48435c;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+  transition: all 0.3s ease-in-out;
 }
 
-.navbar__tabs li {
-  list-style-type: none;
+.btn-top.show {
+  bottom: 20px;
 }
-*/
